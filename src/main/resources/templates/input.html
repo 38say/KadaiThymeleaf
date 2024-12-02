@@ -5,9 +5,9 @@
         <title>Tutorial pf thymeleaf</title>
     </head>
     <body>
-        <h1>Thymeleaf課題</h1>
-        <h2>入力画面</h2>
-        <p>値を入力してください</p>
+        <h1 th:text="#{content.title}">thymeleaf</h1>
+        <h2 th:text="#{content.message}"></h2>
+        <p th:text="#{content.message1}"></p>
 
         <p th:if="${param.previous} != null" th:text="'前回入力された値は'+${param.previous[0]}+'です。'"></p>
 
